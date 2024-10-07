@@ -31,7 +31,7 @@ const portfolioProjects = [
       { title: "Implemented WorkOS authentication." },
       { title: "Integrated MongoDB and AWS S3." },
     ],
-    link: "https://hire-zone.vercel.app",
+    link: "https://hire-zone-rose.vercel.app",
     image: hireZone,
   },
   {
