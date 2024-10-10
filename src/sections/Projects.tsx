@@ -24,14 +24,14 @@ const portfolioProjects = [
     image: quickCaptions,
   },
   {
-    tech: "Next.js, Typescript, TailwindCSS, WorkOS, AWS S3, MongoDB",
+    tech: "React js, Tailwind CSS, Supabase, Clerk, Shadcn UI",
     title: "Hirezone: Job Board",
     results: [
-      { title: "Developed a full-stack job board platform." },
-      { title: "Implemented WorkOS authentication." },
-      { title: "Integrated MongoDB and AWS S3." },
+      { title: "Built a full-stack job board web app." },
+      { title: "Implemented Clerk for user authentication." },
+      { title: "Utilized Supabase for data storage." },
     ],
-    link: "https://hire-zone-rose.vercel.app",
+    link: "https://hirezone.vercel.app",
     image: hireZone,
   },
   {
