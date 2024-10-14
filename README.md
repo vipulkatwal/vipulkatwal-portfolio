@@ -85,7 +85,7 @@ While this is a personal portfolio, I'm open to suggestions and improvements! Fe
 
 ## 📄 Live Link
 
-This project is open source and available under the [Live Link](https://vipulkatwal.vercel.app).
+Project Live Link: [Click Here](https://vipulkatwal.vercel.app).
 
 ## 📞 Contact
 
