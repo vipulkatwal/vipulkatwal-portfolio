@@ -92,7 +92,7 @@ This project is open source and available under the [Live Link](https://vipulkat
 Feel free to reach out to me for any questions or collaborations!
 
 - Email: vipulkatwal17@gmail.com
-- LinkedIn: [Your Name](https://www.linkedin.com/in/vipulkatwal)
+- LinkedIn: [Vipul Katwal](https://www.linkedin.com/in/vipulkatwal)
 
 ---
 
