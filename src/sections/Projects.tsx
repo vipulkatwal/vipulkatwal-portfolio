@@ -6,10 +6,9 @@ import grainImage from "../assets/images/grain.jpg";
 import { SectionHeader } from '../components/SectionHeader';
 import { Card } from '../components/Card';
 import quickCaptions from '../assets/images/quick-captions.png'
-import myPortfolio from '../assets/images/my-portfolio.png'
 import geminiClone from '../assets/images/gemini-clone.png'
 import hireZone from '../assets/images/hire-zone.png'
-// import todoApp from "../assets/images/todo-app.png"
+import zipLink from '../assets/images/url-shortner.png'
 
 const portfolioProjects = [
   {
@@ -24,26 +23,26 @@ const portfolioProjects = [
     image: quickCaptions,
   },
   {
+    tech: "React.js, JavaScript, Tailwind CSS, Supabase, Shadcn UI",
+    title: "Ziplink",
+    results: [
+      { title: "Built URL shortener: 95% link reduction." },
+      { title: "Added custom links and QR codes." },
+      { title: "Implemented real-time analytics dashboard for user." },
+    ],
+    link: "https://quick-captions.vercel.app",
+    image: zipLink,
+  },
+  {
     tech: "React js, Tailwind CSS, Supabase, Clerk, Shadcn UI",
-    title: "Hirezone: Job Board",
+    title: "Hirezone",
     results: [
       { title: "Built a full-stack job board web app." },
-      { title: "Implemented Clerk for user authentication." },
       { title: "Utilized Supabase for data storage." },
+      { title: "Live status tracking raised transparency 70%." },
     ],
     link: "https://hirezone.vercel.app",
     image: hireZone,
-  },
-  {
-    tech: "Next.js, React, JavaScript, TailwindCSS, Framer Motion",
-    title:"Personal Portfolio",
-    results: [
-    { title: "Responsive Next.js & Tailwind CSS portfolio." },
-    { title: "Interactive features & smooth animations." },
-    { title: "Modern UX/UI for seamless cross-device use." },
-    ],
-    link: "https://vipulkatwal.vercel.app",
-    image: myPortfolio,
   },
   {
     tech: "React, HTML, CSS, JavaScript, Gemini API",
@@ -56,17 +55,6 @@ const portfolioProjects = [
     link: "https://google-gemini-clone-seven.vercel.app",
     image: geminiClone,
   },
-  // {
-  //   tech: "React, JavaScript, TailwindCSS",
-  //   title:"Todo List",
-  //   results: [
-  //     { title: "Enhanced user experience by 40%" },
-  //     { title: "Improved site speed by 50%" },
-  //     { title: "Increased mobile traffic by 35%" },
-  //   ],
-  //   link: "",
-  //   image: todoApp,
-  // },
 ];
 
 export const ProjectsSection = () => {
