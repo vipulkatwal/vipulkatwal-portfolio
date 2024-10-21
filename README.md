@@ -27,12 +27,12 @@ To run this project locally:
 
 1. Clone the repository
    ```
-   git clone https://github.com/yourusername/vipulkatwal-portfolio.git
+   git clone https://github.com/vipulkatwal/vipulkatwal-portfolio.git
    ```
 
 2. Install dependencies
    ```
-   cd my-portfolio
+   cd vipulkatwal-portfolio
    npm install
    ```
 
@@ -85,7 +85,7 @@ While this is a personal portfolio, I'm open to suggestions and improvements! Fe
 
 ## 📄 Live Link
 
-This project is open source and available under the [Live Link](https://vipulkatwal.vercel.app).
+Project Live Link: [Click Here](https://vipulkatwal.vercel.app).
 
 ## 📞 Contact
 
