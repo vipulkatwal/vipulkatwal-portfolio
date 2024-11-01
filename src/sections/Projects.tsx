@@ -30,7 +30,7 @@ const portfolioProjects = [
       { title: "Added custom links and QR codes." },
       { title: "Implemented real-time analytics dashboard for user." },
     ],
-    link: "https://quick-captions.vercel.app",
+    link: "https://ziplink-one.vercel.app",
     image: zipLink,
   },
   {
