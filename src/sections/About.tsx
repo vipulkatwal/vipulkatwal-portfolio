@@ -52,7 +52,7 @@ const hobbies = [
 ];
 
 const experiences = [
-  { company: "Unified Mentor Private Limited", position: "Frontend Developer Intern", duration: "Aug 2024 - Present" },
+  { company: "Unified Mentor Private Limited", position: "Frontend Developer Intern", duration: "Aug 2024 - Nov 2024" },
 ];
 
 const education = [
