@@ -6,22 +6,14 @@ import grainImage from "../assets/images/grain.jpg";
 import { SectionHeader } from '../components/SectionHeader';
 import { Card } from '../components/Card';
 import quickCaptions from '../assets/images/quick-captions.png'
-import geminiClone from '../assets/images/gemini-clone.png'
 import hireZone from '../assets/images/hire-zone.png'
 import zipLink from '../assets/images/url-shortner.png'
+import aiSaas from '../assets/images/ai-saas.png'
+import zenSushi from '../assets/images/zen-sushi.png'
+import oneSaas from '../assets/images/one-saas.png'
+import seoSaas from '../assets/images/seo-saas.png'
 
 const portfolioProjects = [
-  {
-    tech: "Next.js, React, JavaScript, TailwindCSS, AWS S3",
-    title: "Quick Captions",
-    results: [
-      { title: "Real-time transcription editing and preview." },
-      { title: "AWS-powered auto-transcription and sync." },
-      { title: "User-friendly caption styling and adjustment." },
-    ],
-    link: "https://quick-captions.vercel.app",
-    image: quickCaptions,
-  },
   {
     tech: "React.js, JavaScript, Tailwind CSS, Supabase, Shadcn UI",
     title: "Ziplink",
@@ -45,16 +37,65 @@ const portfolioProjects = [
     image: hireZone,
   },
   {
-    tech: "React, HTML, CSS, JavaScript, Gemini API",
-    title:"Google Gemini Clone",
+    tech: "Next.js, React, JavaScript, TailwindCSS, AWS S3",
+    title: "Quick Captions",
     results: [
-      { title: "Responsive AI chat app with animations." },
-      { title: "Efficient state and async prompt handling." },
-      { title: "Real-time conversation capabilities." },
+      { title: "Real-time transcription editing and preview." },
+      { title: "AWS-powered auto-transcription and sync." },
+      { title: "User-friendly caption styling and adjustment." },
     ],
-    link: "https://google-gemini-clone-seven.vercel.app",
-    image: geminiClone,
+    link: "https://quick-captions.vercel.app",
+    image: quickCaptions,
   },
+  {
+    tech: "React.js, JavaScript, Tailwind CSS",
+    title: "Nexus.ai",
+    results: [
+      { title: "Responsive React landing page with cutting-edge tech." },
+      { title: "Mobile-first design showcasing front-end expertise." },
+      { title: "Advanced React hooks for dynamic user interactions." }
+    ],
+    link: "https://nexus-ai-blond.vercel.app/",
+    image: aiSaas,
+  },
+  {
+  tech: "HTML, CSS, JavaScript, Vite",
+  title: "Zen Sushi",
+  results: [
+    { title: "Developed a responsive landing page." },
+    { title: "Used advanced CSS for scalability." },
+    { title: "Created a mobile-friendly UI with animations." },
+  ],
+  link: "https://zen-sushi-sable.vercel.app/",
+  image: zenSushi, // replace `zenSushi` with the variable name for your image asset
+  },
+  {
+  tech: "Next.js, React.js, Tailwind CSS, Framer Motion",
+  title: "AI Startup: SaaS Landing Page",
+  results: [
+    { title: "Created a visually compelling landing page." },
+    { title: "Designed responsive UI components." },
+    { title: "Enhanced user experience with dynamic effects." },
+  ],
+  link: "https://startup-landing-page-ai.vercel.app/",
+  image: seoSaas,
+},
+{
+  tech: "Next.js, JavaScript, Tailwind CSS, Framer Motion",
+  title: "Modern: SaaS Landing Page",
+  results: [
+    { title: "Developed a responsive landing page." },
+    { title: "Ensured seamless interaction across devices." },
+    { title: "Optimized and deployed on Vercel." },
+  ],
+  link: "https://mind-matrix-landing-page.vercel.app/", // Replace with actual link
+  image: oneSaas, // Replace `modernSaas` with the variable name for your image asset
+},
+
+
+
+
+
 ];
 
 export const ProjectsSection = () => {
