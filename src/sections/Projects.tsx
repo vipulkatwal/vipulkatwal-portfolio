@@ -99,10 +99,11 @@ const portfolioProjects = [
 export const ProjectsSection = () => {
   const [showMoreProjects, setShowMoreProjects] = useState(false);
 
-  const handleShowMoreClick = (event) => {
+  const handleShowMoreClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     event.preventDefault();
     setShowMoreProjects(!showMoreProjects);
   };
+
 
   return (
     <section id="projects" className="pb-16 lg:py-24">
