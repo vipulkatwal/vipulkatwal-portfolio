@@ -1,3 +1,5 @@
+'use client'
+
 import Image from "next/image";
 import { Calistoga } from 'next/font/google';
 import CheckCircleIcon from "../assets/icons/check-circle.svg";
@@ -12,6 +14,7 @@ import aiSaas from '../assets/images/ai-saas.png'
 import zenSushi from '../assets/images/zen-sushi.png'
 import oneSaas from '../assets/images/one-saas.png'
 import seoSaas from '../assets/images/seo-saas.png'
+import { useState } from 'react';
 
 const portfolioProjects = [
   {
@@ -67,9 +70,9 @@ const portfolioProjects = [
     { title: "Created a mobile-friendly UI with animations." },
   ],
   link: "https://zen-sushi-sable.vercel.app/",
-  image: zenSushi, // replace `zenSushi` with the variable name for your image asset
-  },
-  {
+  image: zenSushi,
+},
+{
   tech: "Next.js, React.js, Tailwind CSS, Framer Motion",
   title: "AI Startup: SaaS Landing Page",
   results: [
@@ -88,23 +91,25 @@ const portfolioProjects = [
     { title: "Ensured seamless interaction across devices." },
     { title: "Optimized and deployed on Vercel." },
   ],
-  link: "https://mind-matrix-landing-page.vercel.app/", // Replace with actual link
-  image: oneSaas, // Replace `modernSaas` with the variable name for your image asset
+  link: "https://mind-matrix-landing-page.vercel.app/",
+  image: oneSaas,
 },
-
-
-
-
-
 ];
 
 export const ProjectsSection = () => {
+  const [showMoreProjects, setShowMoreProjects] = useState(false);
+
+  const handleShowMoreClick = (event) => {
+    event.preventDefault();
+    setShowMoreProjects(!showMoreProjects);
+  };
+
   return (
     <section id="projects" className="pb-16 lg:py-24">
       <div className="container">
         <SectionHeader eyebrow="Real-world Results" title="Featured Projects" description="See how I transformed concepts into engaging digital experiences."/>
         <div className="mt-10 md:mt-20 flex flex-col gap-20">
-          {portfolioProjects.map((project, projectIndex) => (
+          {portfolioProjects.slice(0, showMoreProjects ? portfolioProjects.length : 4).map((project, projectIndex) => (
             <Card key={project.title} className="px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky" style={{
               top: `calc(64px + ${projectIndex * 40}px)`,
             }}>
@@ -141,6 +146,16 @@ export const ProjectsSection = () => {
             </Card>
           ))}
         </div>
+        {portfolioProjects.length > 4 && (
+          <div className="mt-10 flex justify-center">
+            <button
+              className="bg-white text-gray-950 h-12 px-6 hover:bg-slate-200 rounded-xl font-semibold"
+              onClick={handleShowMoreClick}
+            >
+              {showMoreProjects ? 'Show Less' : 'Show More'}
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );
